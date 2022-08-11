@@ -17,6 +17,7 @@ import { PrisedesrendezVousComponent } from './prisedesrendez-vous/prisedesrende
 import { ListedesrendezVousComponent} from './listedesrendez-vous/listedesrendez-vous.component';
 import { ListedesdocteursComponent } from './listedesdocteurs/listedesdocteurs.component';
 import { DialogExpComponent } from './dialog-exp/dialog-exp.component';
+import { SpecialitesComponent } from './specialites/specialites.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DialogExpComponent } from './dialog-exp/dialog-exp.component';
     ListedesdocteursComponent ,
     DialogExpComponent,
     ListedesrendezVousComponent,
-    PrisedesrendezVousComponent
+    PrisedesrendezVousComponent,
+    SpecialitesComponent
 
   ],
   

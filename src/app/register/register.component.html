@@ -9,12 +9,58 @@
       <input type="text"class="form-group"  name= "Last name " placeholder="last name" #lastname="ngModel" ngModel required >
       <br>
       <input type="text"class="form-group" name= "Email " placeholder="Email" #Email="ngModel" ngModel required>
-      <br>
-      <input type="text"class="form-group" name= "Password " placeholder="password" #password="ngModel" ngModel required>
-      <br>
-      <input type="text"class="form-group" name= "Confirm password" placeholder="confirm password"  #confirm password="ngModel"ngModel required >
+       
       <br>
     
+        <div class="form-group inner-addon right-addon">
+          <div class="input-group col-10 " style="left :-20px;width:79%;
+          height: 40px;" >
+            <input name="password"
+                [type]="showPasswordOnPress ? 'text' : 'password'"
+                class="form-control pwd-control input-text"
+                id="password-field" placeholder="Password">
+            <div
+            (mousedown)="showPasswordOnPress = !showPasswordOnPress" 
+            (mouseup)="showPasswordOnPress = !showPasswordOnPress">
+              <i alt="show" class="fas fa-eye-slash eye-hide"
+                 [class.hide]="showPasswordOnPress"></i>
+              <i alt="hide"  class="fas fa-eye eye-show"
+                 [class.hide]="!showPasswordOnPress"></i>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="form-group inner-addon right-addon">
+          <div class="input-group col-10" style="left :-20px;width:79%;
+          height: 40px; border-radius: 10px;"  >
+            <input name="password"
+                [type]="showPasswordOnPress ? 'text' : 'password'"
+                class="form-control pwd-control input-text" 
+                id="password-field" placeholder="confirmer Password">
+            <div
+            (mousedown)="showPasswordOnPress = !showPasswordOnPress" 
+            (mouseup)="showPasswordOnPress = showPasswordOnPress">
+              <i alt="show"  class="fas fa-eye-slash eye-hide"
+                 [class.hide]="showPasswordOnPress"></i>
+              <i alt="hide" class="fas fa-eye eye-show"
+                 [class.hide]="!showPasswordOnPress"></i>
+            </div>
+          </div>
+        </div>
+        <br>
+      <div class="form-check check-input">
+        <input class="form-check-input" type="checkbox" value="Médecin" id="Medecin">
+        <label class="form-check-label" for="flexCheckDefault">
+          Médecin
+        </label>
+      </div>
+      <div class="form-check check-input ">
+        <input class="form-check-input" type="checkbox" value="Patient" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          Patient
+        </label>
+      </div>
+      <br>
     
       <input type="checkbox" id="chk" aria-hidden="true" name="b" #b="ngModel"ngModel required ><p class="p" >I agree to the website terms and conditions</p>
       

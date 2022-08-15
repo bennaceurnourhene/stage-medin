@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+ 
 
   constructor() { }
-
+  visible:boolean=true;
+  changetype :boolean=true;
+ 
   ngOnInit(): void {
   }
   add(f:any){
@@ -19,4 +22,8 @@ export class RegisterComponent implements OnInit {
     
   }
 
+  viewpass(){
+    this.visible=!this.visible;
+    this.changetype=!this.changetype;
+  }
 }

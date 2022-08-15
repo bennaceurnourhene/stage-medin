@@ -9,8 +9,6 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-
-
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { PrisedesrendezVousComponent } from './prisedesrendez-vous/prisedesrendez-vous.component';
@@ -18,6 +16,7 @@ import { ListedesrendezVousComponent} from './listedesrendez-vous/listedesrendez
 import { ListedesdocteursComponent } from './listedesdocteurs/listedesdocteurs.component';
 import { DialogExpComponent } from './dialog-exp/dialog-exp.component';
 import { SpecialitesComponent } from './specialites/specialites.component';
+import { ListPatientComponent } from './list-patient/list-patient.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +27,8 @@ import { SpecialitesComponent } from './specialites/specialites.component';
     DialogExpComponent,
     ListedesrendezVousComponent,
     PrisedesrendezVousComponent,
-    SpecialitesComponent
+    SpecialitesComponent,
+    ListPatientComponent
 
   ],
   

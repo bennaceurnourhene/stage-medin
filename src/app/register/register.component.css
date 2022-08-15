@@ -7,12 +7,13 @@ body{
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
 	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+
 }
 .main{
     margin-left: auto;
     margin-right: auto;
 	width: 400px;
-	height:800px;
+	height:900px;
 	overflow: hidden;
 	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
 	border-radius: 10px;
@@ -21,7 +22,7 @@ body{
 input.text{
 	width: 60%;
 	height: 40px;
-	background: #e0dede;
+	/* background: #e0dede; */
 	justify-content: center;
 	display: flex;
 	margin: 20px auto;
@@ -38,7 +39,7 @@ button{
 	justify-content: center;
 	display: block;
 	color: #fff;
-	background: #573b8a;
+	background: #323133;
 	font-size: 1em;
 	font-weight: bold;
 	margin-top: 20px;
@@ -49,13 +50,16 @@ button{
 	cursor: pointer;
 }
 button:hover{
-	background: #6d44b8;
+	background: #323133;
 }
-.center {
+/* .center {
     display: flex;
     justify-content: center;
-    color:#6d44b8;
-  }
+    color:#36343a;
+    text-decoration: underline solid #413e3f;
+	} */
+
+
   .form-group:focus-within{
     transform:scale(1.1,1.1);
 }
@@ -81,7 +85,7 @@ button:hover{
     margin-bottom:0.2em;
 	
 }
-.password-icon {
+.eyeicon {
 	display: flex;
 	align-items: center;
 	position: absolute;
@@ -91,6 +95,7 @@ button:hover{
 	width: 20px;
 	color: #f9f9f9;
 	transition: all 0.2s;
+	cursor:  pointer;
   }
   .password-icon:hover {
 	cursor: pointer;

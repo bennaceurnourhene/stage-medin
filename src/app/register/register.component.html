@@ -22,8 +22,8 @@
   <div class="w3-section">
     <label>Mot de passe</label>
     <br>
-    <input class="w3-input w3-border w3-hover-border-black" style="width:80%;" [type]="hide ?'password':'text'" name="Mot de passe" required>
-    <span class="material-icons" matSuffix (click)="hide=!hide" >{{hide ? 'visibility':'visibility_off'}} </span>
+    <input matInput fromControlName="Mot de passe"class="w3-input w3-border w3-hover-border-black" style="width:80%;" [type]="showPassword?'password':'text'" name="Mot de passe" required>
+    <i class="fa fa-eye" matSuffix (click)="visibility()" >{{showPassword?'visibility_off':'visibility'}} </i>
     
   </div>
   <div class="w3-section">
@@ -32,8 +32,15 @@
     <input class="w3-input w3-border w3-hover-border-black" style="width:80%;" type="password"
      name="Confirmer mot de passe" required>
   </div>
-  <!-- <input type="checkbox" id="chk" aria-hidden="true" name="b" #b="ngModel"ngModel required ><p class="p" >I agree to the website terms and conditions</p> -->
-  <!-- <button type="submit"  [disabled]="b.invalid" class="w3-button w3-block w3-black">Enregistrer</button> -->
+  <select class="w3-input w3-border w3-hover-border-black" style="width:80%;" aria-label="Default select example">
+    <option selected>Catégorie</option>
+    <option value="medecin">Médecin</option>
+    <option value="patient">Patient</option>
+  </select>
+  <p *ngif="Catégorie === medecin"></p>
+  <input type="checkbox" id="chk" aria-hidden="true" name="b" #b="ngModel"ngModel required ><p class="p" >I agree to the website terms and conditions</p>
+  <button type="submit"  [disabled]="b.invalid" class="w3-button w3-block w3-black">Enregistrer</button>
+ 
   <!-- <div class="form-group">
     <label for="type">Type</label>
     <select class="form-control" id="type" required>
@@ -42,7 +49,7 @@
     </select>
   </div> -->
     
-    <!-- </form>
+   </form>
     
     <p class="p">Already have an account?<a routerLink="/login"> login here</a></p>
             

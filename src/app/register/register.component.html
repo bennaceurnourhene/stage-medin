@@ -1,7 +1,37 @@
 
-<!-- 
-
- -->
+<div class="main">
+ <div class="w3-center w3-padding-64" id="Register">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Register</span>
+  </div>
+<form class="w3-container" action="/action_page.php" target="_blank">
+  <div class="w3-section">
+    <label>Nom</label>
+    <br>
+    <input class="w3-input w3-border w3-hover-border-black" style="width:80%;" type="text" name="Nom" required>
+  </div>
+  <div class="w3-section">
+    <label>Prénom</label>
+    <br>
+    <input class="w3-input w3-border w3-hover-border-black" style="width:80%;" type="text" name="Prénom" required>
+  </div>
+  <div class="w3-section">
+    <label>Email</label>
+    <br>
+    <input class="w3-input w3-border w3-hover-border-black" style="width:80%;" name="Email" required>
+  </div>
+  <div class="w3-section">
+    <label>Mot de passe</label>
+    <br>
+    <input class="w3-input w3-border w3-hover-border-black" style="width:80%;" [type]="hide ?'password':'text'" name="Mot de passe" required>
+    <span class="material-icons" matSuffix (click)="hide=!hide" >{{hide ? 'visibility':'visibility_off'}} </span>
+    
+  </div>
+  <div class="w3-section">
+    <label>Confirmer Mot de passe</label>
+    <br>
+    <input class="w3-input w3-border w3-hover-border-black" style="width:80%;" type="password"
+     name="Confirmer mot de passe" required>
+  </div>
   <!-- <input type="checkbox" id="chk" aria-hidden="true" name="b" #b="ngModel"ngModel required ><p class="p" >I agree to the website terms and conditions</p> -->
   <!-- <button type="submit"  [disabled]="b.invalid" class="w3-button w3-block w3-black">Enregistrer</button> -->
   <!-- <div class="form-group">
